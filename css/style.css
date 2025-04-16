@@ -541,14 +541,14 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 1
   }
 }
-@-webkit-keyframes opacity02-emergence {
+@-webkit-keyframes opacity03-emergence {
   to {
-    opacity: .2
+    opacity: .3
   }
 }
-@keyframes opacity02-emergence {
+@keyframes opacity03-emergence {
   to {
-    opacity: .2
+    opacity: .3
   }
 }
 @-webkit-keyframes transform-emergence {
@@ -2819,7 +2819,8 @@ summary {
     height: 100svh;
     left: 100%;
     top: 0;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 6.875rem .9375rem 3.125rem .9375rem;
     background: rgba(0,5,16,.93);
     transition: left .6s
@@ -3001,8 +3002,8 @@ summary {
     left: 50%
   }
   ._watcher-view .best-solution__column--second {
-    -webkit-animation: opacity02-emergence 1.5s ease .65s forwards;
-    animation: opacity02-emergence 1.5s ease .65s forwards
+    -webkit-animation: opacity03-emergence 1.5s ease .65s forwards;
+    animation: opacity03-emergence 1.5s ease .65s forwards
   }
   ._watcher-view .best-solution__column--third {
     -webkit-animation: default-emergence .8s ease .95s forwards;
@@ -3010,6 +3011,10 @@ summary {
   }
   .best-solution__mockup-wrapper {
     max-width: 14.125rem
+  }
+  .best-solution__img-wrapper--decor .ring {
+    width: 25rem;
+    height: 25rem
   }
   .cta__content {
     grid-template-columns: auto
@@ -3186,6 +3191,16 @@ summary {
   .best-solution__icon-bg {
     align-self: center
   }
+  .best-solution__img-wrapper--eth {
+    left: -23%
+  }
+  .best-solution__img-wrapper--btc {
+    right: -23%
+  }
+  .best-solution__img-wrapper--decor .ring {
+    width: 20.8125rem;
+    height: 20.8125rem
+  }
   .crypto-portfolio__container {
     row-gap: 1.875rem
   }
@@ -3261,6 +3276,12 @@ summary {
   }
   .spollers-questions__body {
     padding: 1.125rem
+  }
+}
+@media (max-width:29.99875em)and (max-width:20em) {
+  .best-solution__img-wrapper--btc,
+  .best-solution__img-wrapper--eth {
+    max-width: 5rem
   }
 }
 @media (max-width:26.24875em) {
@@ -3454,6 +3475,18 @@ summary {
   }
   .best-solution__img-wrapper--decor img {
     width: clamp(31.25rem ,3.7801204819rem + 57.2289156627vw ,43.125rem)
+  }
+}
+@media (max-width:29.99875em)and (min-width:30em) {
+  .best-solution__img-wrapper--btc,
+  .best-solution__img-wrapper--eth {
+    max-width: 6.25rem
+  }
+}
+@media (max-width:29.99875em)and (min-width:20em)and (max-width:30em) {
+  .best-solution__img-wrapper--btc,
+  .best-solution__img-wrapper--eth {
+    max-width: clamp(5rem ,2.5rem + 12.5vw ,6.25rem)
   }
 }
 @media (max-width:47.99875em)and (min-width:48em) {
