@@ -1636,7 +1636,7 @@ body::-webkit-scrollbar-thumb:hover {
   max-width: 42.1875rem
 }
 .cta__header-block:not(:last-child) {
-  margin-bottom: 0
+  margin-bottom: 0!important
 }
 .cta__button {
   justify-self: end;
@@ -2637,7 +2637,7 @@ summary {
     padding-bottom: 10.625rem
   }
   .cta__content {
-    padding-block: 4rem
+    padding-block: 5rem
   }
   .cta__content {
     padding-inline: 4rem
@@ -3374,7 +3374,7 @@ summary {
     padding-bottom: clamp(4.375rem ,2.1771978022rem + 10.989010989vw ,10.625rem)
   }
   .cta__content {
-    padding-block: clamp(2.5rem ,1.9725274725rem + 2.6373626374vw ,4rem)
+    padding-block: clamp(2.5rem ,1.6208791209rem + 4.3956043956vw ,5rem)
   }
   .cta__content {
     padding-inline: clamp(.9375rem ,-.1394230769rem + 5.3846153846vw ,4rem)
